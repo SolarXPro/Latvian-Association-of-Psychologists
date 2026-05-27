@@ -1,16 +1,46 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { toast } from "sonner";
 import { useLanguage } from "@/context/LanguageContext";
 import { Reveal } from "@/components/Reveal";
 
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+type SubmitStatus = "idle" | "submitting" | "sent";
+
 export const Contact = () => {
-  const [sent, setSent] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<SubmitStatus>("idle");
   const { t } = useLanguage();
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSent(true);
-    toast.success(t("contact.toast"));
+
+    if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_PUBLIC_KEY) {
+      toast.error(t("contact.toastConfigError"));
+      return;
+    }
+
+    const form = e.currentTarget;
+    setSubmitStatus("submitting");
+
+    try {
+      await emailjs.sendForm(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        form,
+        EMAILJS_PUBLIC_KEY,
+      );
+
+      form.reset();
+      setSubmitStatus("sent");
+      toast.success(t("contact.toast"));
+    } catch (error) {
+      console.error("Contact form submission failed", error);
+      setSubmitStatus("idle");
+      toast.error(t("contact.toastError"));
+    }
   };
 
   return (
@@ -82,10 +112,14 @@ export const Contact = () => {
 
             <button
               type="submit"
-              disabled={sent}
+              disabled={submitStatus !== "idle"}
               className="mt-10 inline-flex items-center gap-3 bg-primary text-primary-foreground px-7 py-3.5 text-sm uppercase tracking-[0.18em] hover:bg-accent transition-colors duration-500 disabled:opacity-60"
             >
-              {sent ? t("contact.sent") : t("contact.send")}
+              {submitStatus === "submitting"
+                ? t("contact.sending")
+                : submitStatus === "sent"
+                  ? t("contact.sent")
+                  : t("contact.send")}
               <span>→</span>
             </button>
           </form>

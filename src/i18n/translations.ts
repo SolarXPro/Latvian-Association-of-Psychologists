@@ -166,8 +166,12 @@ const ru = {
   "contact.opt4": "Тренинг / семинар",
   "contact.opt5": "Работа со страхами",
   "contact.send": "Отправить запрос",
+  "contact.sending": "Отправляем",
   "contact.sent": "Отправлено",
+  "contact.emailSubject": "Новый запрос с сайта gentle-bridge",
   "contact.toast": "Спасибо! Мы свяжемся с вами в ближайшее время.",
+  "contact.toastError": "Не удалось отправить запрос. Попробуйте ещё раз или свяжитесь с нами по почте.",
+  "contact.toastConfigError": "Форма ещё не подключена к почте. Укажите endpoint отправки в настройках сайта.",
 
   // Footer
   "footer.tagline":
@@ -333,8 +337,12 @@ const en: typeof ru = {
   "contact.opt4": "Training / seminar",
   "contact.opt5": "Fear work",
   "contact.send": "Send request",
+  "contact.sending": "Sending",
   "contact.sent": "Sent",
+  "contact.emailSubject": "New inquiry from the gentle-bridge website",
   "contact.toast": "Thank you! We'll be in touch soon.",
+  "contact.toastError": "We could not send your request. Please try again or email us directly.",
+  "contact.toastConfigError": "The form is not connected to email yet. Set the form endpoint in the site configuration.",
 
   "footer.tagline":
     "Professional community of psychologists and psychotherapists in Latvia.",
@@ -499,8 +507,12 @@ const lv: typeof ru = {
   "contact.opt4": "Treniņš / seminārs",
   "contact.opt5": "Darbs ar bailēm",
   "contact.send": "Nosūtīt pieprasījumu",
+  "contact.sending": "Nosūtām",
   "contact.sent": "Nosūtīts",
+  "contact.emailSubject": "Jauns pieprasījums no gentle-bridge mājaslapas",
   "contact.toast": "Paldies! Mēs drīz ar jums sazināsimies.",
+  "contact.toastError": "Neizdevās nosūtīt pieprasījumu. Mēģiniet vēlreiz vai rakstiet mums pa e-pastu.",
+  "contact.toastConfigError": "Forma vēl nav pieslēgta e-pastam. Norādiet nosūtīšanas endpoint vietnes iestatījumos.",
 
   "footer.tagline":
     "Latvijas psihologu un psihoterapeitu profesionālā kopiena.",
