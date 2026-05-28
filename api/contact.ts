@@ -30,7 +30,7 @@ export default async function handler(req: Request): Promise<Response> {
     const fromEmail = process.env.FROM_EMAIL ?? "onboarding@resend.dev";
     await resend.emails.send({
       from: `Latvijas psihologu asociācija <${fromEmail}>`,
-      to: [process.env.FROM_EMAIL ? "lppasociacija@inbox.lv" : "dandark444@gmail.com", ...(process.env.FROM_EMAIL ? ["dginglats@gmail.com"] : [])],
+      to: [process.env.FROM_EMAIL ? "lppasociacija@inbox.lv" : "dandark444@gmail.com"],
       replyTo: email,
       subject: `Новый запрос: ${name}`,
       html: `
