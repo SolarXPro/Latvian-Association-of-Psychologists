@@ -17,3 +17,4 @@ VITE_CONTACT_FORM_ENDPOINT=https://formspree.io/f/xxxxxxxx
 ```
 
 Without this variable the form will stay visible, but submissions will not reach email and the UI will show a configuration error.
+asdasdasd
