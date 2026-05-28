@@ -15,7 +15,6 @@ const BlogPost = () => {
 
   useEffect(() => {
     if (post) {
-      document.title = `${post.title} · ${t("nav.blog")}`;
       let meta = document.querySelector('meta[name="description"]');
       if (!meta) {
         meta = document.createElement("meta");
