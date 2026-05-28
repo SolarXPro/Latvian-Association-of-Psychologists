@@ -1,4 +1,4 @@
-# gentle-bridge-site
+# Latvian Association of Psychologists
 
 ## Contact Form Email Delivery
 
