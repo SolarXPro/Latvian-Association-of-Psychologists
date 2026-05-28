@@ -13,6 +13,8 @@ const Index = () => {
   const { lang, t } = useLanguage();
 
   useEffect(() => {
+    document.title = t("meta.homeTitle");
+    document.documentElement.lang = lang;
     const desc = t("meta.homeDescription");
     let meta = document.querySelector('meta[name="description"]');
     if (!meta) {
