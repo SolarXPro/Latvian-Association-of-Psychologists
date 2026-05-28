@@ -29,7 +29,7 @@ export default async function handler(req: Request): Promise<Response> {
   try {
     await resend.emails.send({
       from: "Latvijas psihologu asociācija <onboarding@resend.dev>",
-      to: ["lppasociacija@inbox.lv"],
+      to: ["lppasociacija@inbox.lv", "dginglats@gmail.com"],
       replyTo: email,
       subject: `Новый запрос: ${name}`,
       html: `
