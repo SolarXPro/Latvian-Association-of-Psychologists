@@ -2,7 +2,7 @@
 import art2 from "@/assets/art-2.jpg";
 import art3 from "@/assets/art-3.jpg";
 import art4 from "@/assets/art-4.jpg";
-import art5 from "@/assets/art-5.jpg";
+import art5 from "@/assets/blog-8.jpg";
 import type { Lang } from "@/i18n/translations";
 
 export type Post = {
