@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://lppa.eu/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lppa.eu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lppa.eu/"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lppa.eu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lppa.eu/"/>
+  </url>
+  <url>
+    <loc>https://lppa.eu/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lppa.eu/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lppa.eu/blog"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lppa.eu/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lppa.eu/blog"/>
+  </url>
+  <url>
+    <loc>https://lppa.eu/blog/krizis</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lppa.eu/blog/emotsii-i-eq</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lppa.eu/blog/strahi</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lppa.eu/blog/ten-kotoruyu-my-ne-vidim</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lppa.eu/blog/superviziya</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>

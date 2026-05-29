@@ -15,7 +15,8 @@ const BlogPost = () => {
 
   useEffect(() => {
     if (post) {
-      document.title = `${post.title} · ${t("nav.blog")}`;
+      document.title = `${post.title} | LPPA`;
+      document.documentElement.lang = lang;
       let meta = document.querySelector('meta[name="description"]');
       if (!meta) {
         meta = document.createElement("meta");
@@ -24,7 +25,7 @@ const BlogPost = () => {
       }
       meta.setAttribute("content", post.excerpt);
     }
-  }, [post, t]);
+  }, [post, lang, t]);
 
   if (!post) {
     return (

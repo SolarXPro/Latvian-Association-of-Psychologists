@@ -17,9 +17,12 @@ const ru = {
 
   // Meta
   "meta.homeDescription":
-    "Латвийская ассоциация психологов и психотерапевтов — консультации, супервизия, обучение и бережная помощь в кризисах.",
+    "Латвийская ассоциация психологов и психотерапевтов — консультации, супервизия, обучение и бережная помощь в кризисах. Rīga, Latvija.",
   "meta.blogDescription":
     "Блог Латвийской ассоциации психологов и психотерапевтов: статьи о тревоге, отношениях, супервизии и практиках самопомощи.",
+  "meta.homeTitle":
+    "Латвийская ассоциация психологов и психотерапевтов | LPPA",
+  "meta.blogTitle": "Блог — психология и самопомощь | LPPA",
 
   // Hero
   "hero.tagline": "— Профессиональное сообщество · с 2014",
@@ -196,9 +199,12 @@ const en: typeof ru = {
   "brand.navLine2": "of Psychologists and Psychotherapists",
 
   "meta.homeDescription":
-    "Latvian Association of Psychologists and Psychotherapists — consultations, supervision, training and compassionate support during crises.",
+    "Latvian Association of Psychologists and Psychotherapists — consultations, supervision, training and compassionate support during crises. Rīga, Latvia.",
   "meta.blogDescription":
     "Blog of the Latvian Association of Psychologists and Psychotherapists: articles on anxiety, relationships, supervision and self-help practices.",
+  "meta.homeTitle":
+    "Latvian Association of Psychologists and Psychotherapists | LPPA",
+  "meta.blogTitle": "Blog — Psychology & Self-Help | LPPA",
 
   "hero.tagline": "— Professional community · since 2014",
   "hero.subtitle":
@@ -366,9 +372,12 @@ const lv: typeof ru = {
   "brand.navLine2": "psihoterapeitu asociācija",
 
   "meta.homeDescription":
-    "Latvijas psihologu un psihoterapeitu asociācija — konsultācijas, supervīzija, apmācības un saudzīgs atbalsts krīzēs.",
+    "Latvijas psihologu un psihoterapeitu asociācija — konsultācijas, supervīzija, apmācības un saudzīgs atbalsts krīzēs. Rīga, Latvija.",
   "meta.blogDescription":
     "Latvijas psihologu un psihoterapeitu asociācijas blogs: raksti par trauksmi, attiecībām, supervīziju un pašpalīdzības praksēm.",
+  "meta.homeTitle":
+    "Latvijas psihologu un psihoterapeitu asociācija | LPPA",
+  "meta.blogTitle": "Blogs — psiholoģija un pašpalīdzība | LPPA",
 
   "hero.tagline": "— Profesionāla kopiena · kopš 2014",
   "hero.subtitle":

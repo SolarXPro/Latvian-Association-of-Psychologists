@@ -15,7 +15,8 @@ const Blog = () => {
   const page = Math.max(1, parseInt(params.get("page") ?? "1", 10) || 1);
 
   useEffect(() => {
-    document.title = `${t("nav.blog")} · ${t("brand.title")}`;
+    document.title = t("meta.blogTitle");
+    document.documentElement.lang = lang;
     const desc = t("meta.blogDescription");
     let meta = document.querySelector('meta[name="description"]');
     if (!meta) {
