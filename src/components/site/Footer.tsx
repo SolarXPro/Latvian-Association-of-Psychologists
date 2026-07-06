@@ -41,8 +41,26 @@ export const Footer = () => {
             <h4 className="text-[10px] uppercase tracking-[0.22em] text-primary-foreground/60 mb-4">
               {t("footer.contact")}
             </h4>
-            <p className="text-sm">lppasociacija@inbox.lv</p>
-            <p className="text-sm mt-1">+371 26772532</p>
+            <p className="text-sm">
+              <a href="mailto:lppasociacija@inbox.lv" className="hover:text-accent transition-colors">
+                lppasociacija@inbox.lv
+              </a>
+            </p>
+            <p className="text-sm mt-1">
+              <a href="tel:+37126772532" className="hover:text-accent transition-colors">
+                +371 26772532
+              </a>
+            </p>
+            <p className="text-sm mt-1">
+              <a
+                href="https://www.facebook.com/profile.php?id=100054260211823"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-accent transition-colors"
+              >
+                Facebook
+              </a>
+            </p>
           </div>
         </div>
 

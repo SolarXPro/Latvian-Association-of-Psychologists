@@ -59,14 +59,23 @@ export const Contact = () => {
 
             <dl className="mt-10 space-y-6">
               {[
-                { k: t("contact.email"), v: "lppasociacija@inbox.lv" },
-                { k: t("contact.phone"), v: "+371 26772532" },
+                { k: t("contact.email"), v: "lppasociacija@inbox.lv", href: "mailto:lppasociacija@inbox.lv", external: false },
+                { k: t("contact.phone"), v: "+371 26772532", href: "tel:+37126772532", external: false },
+                { k: "Facebook", v: t("contact.facebookCta"), href: "https://www.facebook.com/profile.php?id=100054260211823", external: true },
               ].map((item) => (
                 <div key={item.k} className="grid grid-cols-[120px_1fr] gap-4 items-baseline">
                   <dt className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
                     {item.k}
                   </dt>
-                  <dd className="text-foreground">{item.v}</dd>
+                  <dd className="text-foreground">
+                    <a
+                      href={item.href}
+                      {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                      className="hover:text-accent transition-colors break-words"
+                    >
+                      {item.v}
+                    </a>
+                  </dd>
                 </div>
               ))}
             </dl>
